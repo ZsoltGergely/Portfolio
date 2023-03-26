@@ -62,8 +62,8 @@ function Projects() {
               imgPath={homelab}
               isBlog={false}
               title="HomeLab"
-              description="I also have a small homelab at home, where I run a few VMs for testing and learning. I also have a few Raspberry Pis running.
-              I mostly use it for learning and testing new technologies. I also have a few projects running on it, such as a JellyFin instance, an *Arr Stack, my WEB servers, HomeAssistant and a few other things."           
+              description="I also have a small homelab with an HP server and a few Raspberry Pis, where I run a few VMs for testing and learning.
+              It's mostly used for learning and testing new technologies. I also have all my projects running on it along with instances such as JellyFin, an *Arr Stack, my WEB servers, HomeAssistant and a few other things."           
             />
           </Col>
           <Col md={4} className="project-card">
