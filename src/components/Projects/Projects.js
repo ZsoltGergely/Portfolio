@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import xolt from "../../Assets/Projects/xolt.png";
+import xmkt from "../../Assets/Projects/xMKT.png";
+import xadmin from "../../Assets/Projects/xadmin.png";
+import exorover from "../../Assets/Projects/rover.png";
+import spotreal from "../../Assets/Projects/spotreal.png";
+import homelab from "../../Assets/Projects/homelab.png";
 
 function Projects() {
   return (
@@ -23,68 +23,71 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={xolt}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="xOLT"
+              description="GPON OLT management suite with the ability to manage clients, bandwidth profiles, ONU types and much more. 
+              This project is currently in the Alpha phase, I am implementing it in Alter-NET SRL's ISP network for managing multiple ZTE-C300 devices. 
+              In the future I plan to create an Android/iOS app for managing the OLTs remotely."
+              ghLink="https://github.com/ZsoltGergely/xOLT"
+              demoLink="https://olt.xdd.ro/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={xmkt}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="xMKT"
+              description="Management software for MikroTik devices running RouterOS and SwOS. It can be used to keep device configurations in sync, update firmware, 
+              provide an intuitive inteface for managing a large number of devices, send alerts of the status of the network, automatically discover
+              and collect data. I intend to implement a REST API for the software, so that it can be easily implemented into an existing tech stack.
+              This project is also currently being rolled out in Alter-NET SRL's network on over 400 devices."
+              ghLink="https://github.com/ZsoltGergely/xMKT"
+              demoLink="https://olt.xdd.ro/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={spotreal}
+              isBlog={false}
+              title="SpotReal"
+              description="A small proof of concept project for a Snapchat-like app. It is built using React Native, Express.js and Expo. 
+              It connects to your Spotify account and allows you to share your current song with your friends. All shared songs appear on a map, so you can check out 
+              what people are listening to around you."           
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={homelab}
+              isBlog={false}
+              title="HomeLab"
+              description="I also have a small homelab at home, where I run a few VMs for testing and learning. I also have a few Raspberry Pis running.
+              I mostly use it for learning and testing new technologies. I also have a few projects running on it, such as a JellyFin instance, an *Arr Stack, my WEB servers, HomeAssistant and a few other things."           
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={xadmin}
+              isBlog={false}
+              title="xAdmin"
+              description="An custom admin panel featuring a few sistems I've developed for Alter-NET SRL. It is currently being used by the company's employees.
+              It features a custom SMS gateway system, a ticketing system, a assignment system, a network monitoring system(watchdog) and a VM provisioning system for ESXI."
+              ghLink="https://github.com/ZsoltGergely/admin.xdd.ro"
+              demoLink="https://admin.xdd.ro/"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={exorover}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="ExoROVER"
+              description="
+              A remote controlled rover for an ESERO competition. It is equipped with a camera, a GPS module, a gyroscope, a magnetometer, 
+              a thermometer and a barometer. It can be controlled via a custom client. It was built using an Arduino, a Raspberry Pi 4 and a lot of other sensors and components.
+              We created this project in a team ran by Pető Mária, a teacher at the Székely Mikó Kollégium in Sfantu Gheorghe."
+              ghLink="https://github.com/ZsoltGergely/Rover"
             />
           </Col>
         </Row>
