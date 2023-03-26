@@ -62,7 +62,7 @@ function Projects() {
               imgPath={homelab}
               isBlog={false}
               title="HomeLab"
-              description="I also have a small homelab with an HP server and a few Raspberry Pis, where I run a few VMs for testing and learning.
+              description="I also have a small homelab with an HP server and a few Raspberry Pis.
               It's mostly used for learning and testing new technologies. I also have all my projects running on it along with instances such as JellyFin, an *Arr Stack, my WEB servers, HomeAssistant and a few other things."           
             />
           </Col>
