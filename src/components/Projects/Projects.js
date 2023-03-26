@@ -71,8 +71,8 @@ function Projects() {
               imgPath={xadmin}
               isBlog={false}
               title="xAdmin"
-              description="An custom admin panel featuring a few sistems I've developed for Alter-NET SRL. It is currently being used by the company's employees.
-              It features a custom SMS gateway system, a ticketing system, a assignment system, a network monitoring system(watchdog) and a VM provisioning system for ESXI."
+              description="A custom admin panel featuring a few systems I've developed for Alter-NET SRL. It is currently being used by the company's employees.
+              It features a custom SMS gateway system, a ticketing system, an assignment system, a network monitoring system(watchdog) and a VM provisioning system for ESXI."
               ghLink="https://github.com/ZsoltGergely/admin.xdd.ro"
               demoLink="https://admin.xdd.ro/"              
             />
